@@ -1,7 +1,7 @@
 # SpookScanner
 CodeQuantum Project
 
-SpookScanner is a website that will take in a photo from a user and allow the user to either edit the photo with multiple editing options, or do a "SpookScan" which is a reverse search of the image. The SpookScan will search the 
+SpookScanner is a website that will take in a photo from a user and allow the user to either edit the photo with multiple editing options, or do a "SpookScan" which is a reverse search of the image. The SpookScan will search the web for similar photos. 
 
 What doesn't work:
 1. There is not a database for Sign-up and Log-in profiles, but the buttons do work.
