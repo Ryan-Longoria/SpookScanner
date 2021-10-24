@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+      background: url(HalloweenBG6.png), linear-gradient(0deg, #fca101,#fca101);
+      background-repeat: repeat;
+      background-size: cover;
+   }
+   
+   .title {
+      font-family: Butcherman;
+      font-size: 80px;
+      text-align: center;
+   }
+
+   .signup {
+      width: 300px;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+      padding: 30px;
+      margin: 8% auto 0;
+      text-align: center;
+   }
+
+   .signup h1 {
+      margin-bottom: 30px;
+   }
+
+   .credentials {
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+      margin-left:-10px;
+      width: 100%;
+      border: 1px solid #999;
+      outline: none;
+   }
+
+   .Zombie {
+      position:absolute;
+      width: 250px;
+      height: 250px;
+   }
+
+   img {
+      float: left;
+      top: 200px;
+      left: 500px;
+   }
+
+   .signupbutton{
+      background-color:green;
+      border:none;
+      color:white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 1px 5px 9px;
+      cursor: pointer;
+   }
+</style>
+<body>
+   <script src='http://use.edgefonts.net/butcherman.js'></script>  
+   <div class="title"> SpookScanner </div>
+   <img class="Zombie" src="Zombie.png" alt="Zombie">
+   <div class="signup" style="position:relative; bottom:150px;">
+      <h1> Log in </h1>
+      <form>
+         <input type="email" class="credentials" placeholder="Your Email">
+         <input type="password" class="credentials" placeholder="Your password">
+         <button type="termbutton" class="signupbutton"><a href="interaction.html">Login</a></button>
+         <br><div style="color:white">Don't have an account? <a href="index.html">Sign up</a></div>
+      </form>
+   </div>
+   <br><br><br><br>
+</body>
+</html>

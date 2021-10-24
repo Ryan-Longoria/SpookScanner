@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+      background: url(HalloweenBG6.png), linear-gradient(0deg, #fca101,#fca101);
+      background-repeat: repeat;
+      background-size: cover;
+   }
+   
+   .title {
+      font-family: Butcherman;
+      font-size: 80px;
+      text-align: center;
+   }
+
+   .DropDownList {
+      width: 200px;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+      background:black;
+      padding: 30px;
+      margin: 8% auto 0;
+      text-align: center;
+      margin-top: 500px;
+      margin-left: 200px;
+      color: orange;
+   }
+
+   .Pumpkin {
+      position: 
+      width: 350px;
+      height: 350px;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+   }
+
+   .search {
+      background-color:green;
+      border:none;
+      color:white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 1px 5px 9px;
+      cursor: pointer;
+   }
+
+   .buttonC {
+      position: absolute;
+      text-align: center;
+      margin-bottom: 100px;
+   }
+</style>
+<body>
+   <p style="text-align:center">
+   <input type="file" id="myFileInput">
+   <img id="imgPreview" alt="Preview">
+   <script>
+      document.querySelector("#myFileInput").addEventListener("change", function() {
+         const reader = new FileReader();
+         reader.addEventListener("load", () => {
+            localStorage.setItem("recent-image", reader.result);
+         });
+         reader.readAsDataURL(this.files[0]);
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+         
+         if (recentImageDataURL) {
+             document.querySelector("#imgPreview").setAttribute("src", recentImageDataURL);
+         }
+      });
+   </script>
+   </p>
+   <p style="text-align:center">
+   <img class="Pumpkin" src="Pumpkin.png" alt="Pumpkin">
+   </p>
+   <div class="DropDownList">
+   <p> Editing Options </p>
+   <form>
+      <select name = "dropdown">
+         <option value = "Select" selected>Select</option>
+         <option value = "Black and White" selected>Black and White</option>
+         <option value = "Merge images">Merge Images</option>
+         <option value = "Crop image">Crop Image</option>
+      </select>
+   </form>
+   </div>
+   <div class = "buttonC">
+   <button class="search" type="button">SpookScan!</button>
+   </div>
+</body>
+</html>
